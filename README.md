@@ -40,7 +40,7 @@ This is Project 3 of [CS50's Web Programming with Python and JavaScript](https:/
 ```bash
 # 1. Clone the repository
 git clone https://github.com/dianr6boy1386/Mail.git
-cd <repository>
+cd Mail
 
 # 2. (Recommended) create a virtual environment
 python -m venv .venv
