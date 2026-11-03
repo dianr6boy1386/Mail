@@ -1,0 +1,84 @@
+textarea {
+    min-height: 400px;
+}
+
+.email-row {
+    align-items: center;
+    border: 1px solid #d8dee4;
+    cursor: pointer;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: minmax(160px, 1fr) minmax(220px, 2fr) max-content;
+    padding: 12px 14px;
+}
+
+.email-row + .email-row {
+    border-top: 0;
+}
+
+.email-row:hover {
+    background: #f6f8fa;
+}
+
+.email-row.unread {
+    background: #ffffff;
+    font-weight: 700;
+}
+
+.email-row.read {
+    background: #edf0f3;
+}
+
+.email-row-sender,
+.email-row-subject,
+.email-row-timestamp {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-row-timestamp {
+    color: #5f6b7a;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.empty-mailbox {
+    color: #5f6b7a;
+    margin-top: 16px;
+}
+
+.email-detail-header {
+    border-bottom: 1px solid #d8dee4;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+}
+
+.email-detail-header p {
+    margin: 4px 0;
+}
+
+.email-actions {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+
+.email-body {
+    background: #ffffff;
+    border: 1px solid #d8dee4;
+    min-height: 220px;
+    padding: 16px;
+    white-space: pre-wrap;
+}
+
+#compose-message {
+    margin-top: 8px;
+}
+
+@media (max-width: 700px) {
+    .email-row {
+        gap: 4px;
+        grid-template-columns: 1fr;
+    }
+}
